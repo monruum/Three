@@ -36,9 +36,13 @@ class TableViewController: UITableViewController {
 
         cell.textLabel?.text = restArray[indexPath.row]
         cell.imageView?.image = UIImage(named: restArray[indexPath.row])
+  
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
+    }
 
     /*
     // Override to support conditional editing of the table view.
